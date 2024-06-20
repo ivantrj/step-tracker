@@ -9,9 +9,10 @@ import SwiftUI
 import HealthKitUI
 
 struct HealthKitPermissionPrimingView: View {
-    @State private var isShowinHealthKitPermissions = false
     @Environment(\.dismiss) private var dismiss
     @Environment(HealthKitManager.self) private var hkManager
+    @State private var isShowinHealthKitPermissions = false
+    @Binding var hasSeen: Bool
     
     var description = """
     This app displays your step and weight data in interactive charts.
@@ -42,6 +43,7 @@ struct HealthKitPermissionPrimingView: View {
             .tint(.pink)
         }
         .padding(30)
+        .onAppear { hasSeen = true }
         .healthDataAccessRequest(store: hkManager.store,
                                  shareTypes: hkManager.types,
                                  readTypes: hkManager.types,
@@ -58,6 +60,6 @@ struct HealthKitPermissionPrimingView: View {
 }
 
 #Preview {
-    HealthKitPermissionPrimingView()
+    HealthKitPermissionPrimingView(hasSeen: .constant(true))
         .environment(HealthKitManager())
 }
