@@ -74,7 +74,6 @@ struct DashboardView: View {
                     .padding()
                     .background(RoundedRectangle(cornerRadius: 12).fill(Color(.secondarySystemBackground)))
                     
-                    
                     VStack(alignment: .leading) {
                         VStack(alignment: .leading) {
                             Label("Averages", systemImage: "calendar")
@@ -97,7 +96,6 @@ struct DashboardView: View {
             }
             .padding()
             .task {
-//                await hkManager.addSimulatorData()
                 isShowingPermissinPrimingSheet = !hasSeenPermissionPriming
             }
             .navigationTitle("Dashboard")
@@ -106,9 +104,9 @@ struct DashboardView: View {
             }
             .sheet(isPresented: $isShowingPermissinPrimingSheet, onDismiss:
                     {
-                        //fetch health data
-                    }, content: {
-                        HealthKitPermissionPrimingView(hasSeen: $hasSeenPermissionPriming)
+                //fetch health data
+            }, content: {
+                HealthKitPermissionPrimingView(hasSeen: $hasSeenPermissionPriming)
             })
         }
         .tint(selectedStat.tint)
