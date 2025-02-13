@@ -20,6 +20,7 @@
 		2C867D682C2431990067811D /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C867D672C2431990067811D /* HealthKitManager.swift */; };
 		2CCE09602D59FE0800436E8C /* StepBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE095F2D59FE0800436E8C /* StepBarChart.swift */; };
 		2CE55BE82C8ED2B000416991 /* HealthMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE55BE72C8ED2AF00416991 /* HealthMetric.swift */; };
+		2CE8EE842D5DDB6400DEB15F /* StepPieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE8EE832D5DDB5F00DEB15F /* StepPieChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		2C867D672C2431990067811D /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		2CCE095F2D59FE0800436E8C /* StepBarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepBarChart.swift; sourceTree = "<group>"; };
 		2CE55BE72C8ED2AF00416991 /* HealthMetric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthMetric.swift; sourceTree = "<group>"; };
+		2CE8EE832D5DDB5F00DEB15F /* StepPieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepPieChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,13 +80,13 @@
 		2C5EAB452C2030A5006292CF /* Step Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				2C4FD2B62D5B3FEE0011D3BF /* Extensions */,
 				2C867D662C242BC30067811D /* Step Tracker.entitlements */,
 				2C5EAB462C2030A5006292CF /* Step_TrackerApp.swift */,
 				2CCE09642D59FF7D00436E8C /* Managers */,
 				2CCE09632D59FF7900436E8C /* Model */,
 				2CCE09622D59FF6200436E8C /* Charts */,
 				2CCE09612D59FF5000436E8C /* Screens */,
+				2C4FD2B62D5B3FEE0011D3BF /* Extensions */,
 				2C5EAB4A2C2030A7006292CF /* Assets.xcassets */,
 				2C5EAB4C2C2030A7006292CF /* Preview Content */,
 			);
@@ -112,6 +114,7 @@
 		2CCE09622D59FF6200436E8C /* Charts */ = {
 			isa = PBXGroup;
 			children = (
+				2CE8EE832D5DDB5F00DEB15F /* StepPieChart.swift */,
 				2CCE095F2D59FE0800436E8C /* StepBarChart.swift */,
 				2C4FD2B22D5B3F610011D3BF /* ChartMath.swift */,
 				2C4FD2B42D5B3F810011D3BF /* ChartDataTypes.swift */,
@@ -217,6 +220,7 @@
 				2C4FD2B32D5B3F610011D3BF /* ChartMath.swift in Sources */,
 				2CE55BE82C8ED2B000416991 /* HealthMetric.swift in Sources */,
 				2C4FD2B52D5B3F810011D3BF /* ChartDataTypes.swift in Sources */,
+				2CE8EE842D5DDB6400DEB15F /* StepPieChart.swift in Sources */,
 				2C4FD2BC2D5B401B0011D3BF /* Date+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
