@@ -12,7 +12,7 @@ extension Date {
         Calendar.current.component(.weekday, from: self)
     }
     
-    var weeklyTitle: String {
+    var weekdayTitle: String {
         self.formatted(.dateTime.weekday(.wide))
     }
 }
